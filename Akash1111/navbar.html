@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Wanderlust</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar */
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 40px;   
+      height: 70px;
+      background-color: aliceblue;
+    }
+
+    .nav-left,
+    .nav-center,
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .nav-right button {
+      background-color: rgb(12, 129, 12);
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    /* Hero Section */
+    #pic {
+      background-image: url("https://media.istockphoto.com/id/478627080/photo/evening-view-of-ama-dablam.jpg?s=612x612&w=0&k=20&c=GLKvtQt1JVoOB4yR2WI86_fYOmG8WObeZP_QV_gFG_0=");
+      background-size: cover;
+      background-position: center;
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 80px;
+      color: white;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background-color: rgba(0, 255, 191, 0.85);
+      padding: 8px 20px;
+      border-radius: 50px;
+      width: fit-content;
+      color: black;
+      font-weight: bold;
+    }
+
+    #pic h1 {
+      font-size: 50px;
+      margin-top: 20px;
+    }
+
+    #button-hover:hover {
+      background-color: white !important;
+      color: black !important;
+     
+    }
+
+    .transparent-btn {
+      background-color: transparent;
+      transition: all 0.9s ease;
+     
+    }
+
+    /* Hover effect */
+    .transparent-btn:hover {
+      background-color: rgba(27, 29, 27, 0.2);
+      color: #181818;
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <div class="container">
+    <div class="nav-left">
+      <i class="fa-brands fa-rebel"></i>
+      <h2>Wanderlust</h2>
+    </div>
+
+    <div class="nav-center">
+      <h3>Destination</h3>
+      <h3>Tours</h3>
+      <h3>About</h3>
+      <select>
+        <option>Resources</option>
+        <option>Blogs</option>
+        <option>Gallery</option>
+      </select>
+      <h3>Contact</h3>
+    </div>
+
+    <div class="nav-right">
+      <i class="fa-solid fa-moon"></i>
+      <button id="button-hover">Book Now</button>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <div id="pic">
+    <div class="badge">
+      <i class="fa-solid fa-location-crosshairs"></i>
+      <span id="button-hover">Top-Rated Travel Agency 2025</span>
+    </div>
+
+    <h1>Discover Your Next Adventure</h1>
+    <h1 style="color: rgb(24, 214, 214); padding: 10px 10px; margin: -20px;"> Adventure</h1>
+    <h3> Explore breathtaking destinations around the world with our<br>
+      expertly curated tours. Froms ancient wonders to tropical<br>
+      paradises, your dream vacation awaits.</h3>
+    <div style="display: flex; gap: 10px;">
+      <button
+        style="background-color: rgb(0, 0, 0); padding: 10px; border-radius: 40px; border: none; color: white; cursor: pointer;"
+        id="button-hover"> Explore Tour <i class="fa-solid fa-arrow-right"></i>
+      </button>
+
+      <button style="color: rgb(245, 245, 245); display: flex; align-items: center; gap: 10px; border-radius: 40px; cursor: pointer;" class="transparent-btn">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        Watch Our Story </button>
+    </div>
+    <br>
+
+    <hr>
+    <div style="display: flex; flex-direction: row; gap: 20px;">
+      <div>
+        <h1 style="margin: 0%;">50+</h1>
+        <h6 style="margin: 0%;"> Destination</h6>
+      </div>
+
+      <div>
+        <h1 style="margin: 0%;"> 200+</h1>
+        <h6 style="margin: 0%;"> Tour packages</h6>
+      </div>
+
+      <div>
+        <h1 style="margin: 0%;"> 15k+</h1>
+        <h6 style="margin: 0%;"> Happy Travelers</h6>
+      </div>
+
+      <div>
+        <h1 style="margin: 0%;"> 98%</h1>
+        <h6 style="margin: 0%;"> Satisfaction Rate</h6>
+      </div>
+    </div>
+    <br><br>
+    <div
+      style="width: 1200px; height: 80px; background-color: aquamarine; border: 1px solid black; border-radius: 100px; display: flex; justify-content: space-around;">
+      <div style="margin: 10px; padding: 10px; display: flex; flex-direction: column; gap: 4px; border: radius 180px; width: 120px;">
+        <label>Destination :</label>
+        <input type="text" placeholder="Where Too ?">
+      </div>
+
+      <div style="margin: 10px; padding: 10px; display: flex; flex-direction: column; gap: 4px;  width: 120px;">
+        <label> Chech in:</label>
+        <input type="text" placeholder="dd-mm-yyyy"></input>
+      </div>
+      <div style="margin: 10px; padding: 10px; display: flex; flex-direction: column; gap: 4px; width: 120px;">
+        <label> Check out:</label>
+        <input type="text" placeholder="dd-mm-yyyy"></input>
+      </div>
+
+      <div style="margin: 10px; padding: 10px; display: flex; flex-direction: column; gap: 4px;  width: 100px;">
+        <label> Traveler:</label>
+        <input type="text" placeholder="1 Traveler"></input>
+      </div>
+      <div style=" width:  80px; height: 40px; display: flex; flex-direction: row; margin: 20px; ">
+    <button  id="button-hover"> Search Tours </button>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>

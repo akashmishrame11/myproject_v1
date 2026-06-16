@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title> Flex CSS</title>
+</head>
+
+<body>
+    <div style="width: 100vw; height: 100vh; border: 1px solid black; display: flex; flex-direction: column;">
+        <div style="width: 100%; background-color: blue; display: flex;">
+
+            <div style="flex: 1; background-color: aliceblue;">1</div>
+            <div style="flex: 1;  background-color: rgb(0, 8, 15);">2</div>
+            <div style="flex: 1;  height: 200px; background-color: rgb(255, 0, 43);">3</div>
+        </div>
+        <div style="display: flex; height: 100%; ">
+            <div style="flex: 1; background-color: brown; display: flex; align-items: center; justify-content: center;">               
+                <div style="height: 200px; width: 200px; background-color: aqua;"></div>
+            </div>
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 2px; padding: 4px;">
+                <div
+       8             style="display: flex; flex: 1; background-color: burlywood; justify-content: center; align-items: center;">
+                    1</div>
+                <div
+                    style="display: flex; flex: 1; background-color: burlywood; justify-content: center; align-items: center;">
+                    2</div>
+                <div
+                    style="display: flex; flex: 1; background-color: burlywood; justify-content: center; align-items: center;">
+                    3</div>
+                <div
+                    style="display: flex; flex: 1; background-color: burlywood; justify-content: center; align-items: center;">
+                    4</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

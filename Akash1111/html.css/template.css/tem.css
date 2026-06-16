@@ -1,0 +1,27 @@
+.nav{
+ height: 100px;
+ width: 1330px;
+ display: flex;
+ justify-content: space-between;
+
+}
+.frist{
+    display: flex;
+
+}
+.second{
+  display: flex;
+  gap:15px;
+}
+.fix{
+    height: 40px;
+    width: 80px;
+    padding: 2px 5px;
+    color: rgb(23, 250, 23);
+    margin: 19px;
+    border: 4PX SOLID black;
+}
+.but{
+    color: rgb(23, 250, 23);
+    margin: 15PX;
+}

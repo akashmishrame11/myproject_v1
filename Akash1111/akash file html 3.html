@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> company management System</title>
+    <style>
+        #img {
+            width: 200px;
+            height: 200px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 40%;
+        }
+
+        td,
+        th {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .section {
+            height: 50px;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> company management System</h1>
+    <p> This page is for practicing pure HTML only</p>
+    <hr>
+    <nav>
+        <a href="#">Dasboard</a> |
+        <a href="#">Employee</a> |
+        <a href="#"> Projects</a> |
+        <a href="#"> Help</a>
+    </nav>
+    <hr>
+    <h2> Introduction</h2>
+    <p> This template contains multiple HTML elements such as table, forms, lists, and image without using CSS</p>
+    <hr>
+    <h2> Company Logo</h2>
+    <img id="img" src="https://cdn.vectorstock.com/i/500p/57/31/gold-business-graph-arrow-logo-vector-27875731.jpg"
+        alt="Compant logo">
+    <hr>
+    <h3> Departments</h3>
+    <ul>
+        <li>Engineering</li>
+        <li>Human Resources</li>
+        <li> Finance</li>
+        <li> Marketing</li>
+    </ul>
+
+    <h3> Project Phases</h3>
+    <ol>
+        <li> Requirement Gathering</li>
+        <li> Development</li>
+        <li> Testing</li>
+        <li> Deployment</li>
+    </ol>
+    <hr>
+    <h3> Employe Table</h3>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th> Experience</th>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Keshav</td>
+            <td> Engineering</td>
+            <td>2 Years</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td> Amit</td>
+            <td> Finance</td>
+            <td> 1 Years</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>Neha</td>
+            <td>HR</td>
+            <td>3 Years</td>
+        </tr>
+    </table>
+    <hr>
+    <h3> Add New Employe</h3>
+    <form>
+
+        <label> Name:</label>
+        <input type="text">
+        <br><br>
+        <label> Email:</label>
+        <input type="text">
+        <br><br>
+
+        <label> Department:</label>
+        <select>
+            <option value="Engineering">Engineering</option>
+        </select>
+        <br><br>
+        <label> Gender:</label>
+        <input type="radio" name="Gender">Male
+        <input type="radio" name="Gender">Female
+        <BR><BR>
+        <!-- <tr>
+    <th>Java</th>
+    <th> HTML</th>
+    <th> SQL</th>
+ </tr> -->
+        <p>Language:</p>
+        <div>
+            <input type="checkbox" id="java" name="language" value="java" />
+            <label for="java">Java</label>
+
+            <input type="checkbox" id="html" name="language" value="html" />
+            <label for="html">Html</label>
+
+            <input type="checkbox" id="sql" name="language" value="sql" />
+            <label for="sql">SQL</label>
+        </div>
+
+        <br><br>
+        <label> Notes:</label>
+        <input class="section">
+        <br><br>
+        <button> Save</button>
+        <button> Clear</button>
+    </form>
+
+</body>
+
+</html>

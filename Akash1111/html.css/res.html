@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="res.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <title>Document</title>
+</head>
+<body>
+   <div class="container">
+    <div class="nav">
+<div class="frist">
+        <i class="fa-brands fa-docker"  style="font-size: 40px; padding: 7px; margin:10px;"></i>
+        <h1>
+            BRAND NAME
+        </h1>
+        </div>
+        <div class="second" style="margin: 10px;">
+           <h3> HOME</h3>
+           <h3> PRODUCT</h3>
+           <h3> PRICING</h3>
+           <h3> CONTACT</h3>
+           <select class="fix" style="margin: 15PX;">
+            <option>
+                ABOUT US
+            </option>
+           </select>
+        </div>
+        <div class="third" style="margin: 10px;">
+            <h2 style="color: blue;"> Login</h2>
+            <button class="fix"  style="margin: 15PX;"> join us</button>
+        </div>
+        <div class="menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+         <div class="sing">
+            <h2 style="color: blue;"> Login</h2>
+            <button class="fix"> join us</button>
+        </div>
+    </div>
+        <div style="display: flex;
+        direction: row;
+  justify-content:center;
+  align-items:flex-start;
+  margin: 100px;">
+  <div class="main_container">
+    <h3 style="display:flex; justify-content: center; font: size 20px;"> Welcome </h3>
+    <h1 style="display:flex; justify-content: center; font: size 20px; font-size: 40px;"> Selling on the</h1>
+    <h1 style="display:flex; justify-content: center; font: size 20px; font-size: 40px;"> internal like a pro</h1>
+    <pre style="display:flex; justify-content: center; font: size 20px; font-size: 20px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+        We know how large objects will cat, but things on a 
+                      small scale just do not act that way.
+    </pre>
+    <div style="display: flex; gap: 120px; padding: 0px 20px 20px;">
+    <button class="tom"> GET QUOTE NOW</button>
+      <button class="tom" style="background-color: blue;">LEARN MORE</button>
+    </div>
+  </div>
+  </div>
+    </div>
+<script>
+const menuBtn = document.getElementById("menu");
+const navLinks = document.getElementById("sing");
+
+menuBtn.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+</script>
+</body>
+</html>
